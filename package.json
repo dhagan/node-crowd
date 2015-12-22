@@ -1,0 +1,16 @@
+{
+  "name": "node-crowd",
+  "version": "1.0.0",
+  "description": "Script crowd setup",
+  "main": "crowd-1.js",
+  "dependencies": {
+    "async": "^1.5.0",
+    "atlassian-crowd-client": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
