@@ -8,8 +8,9 @@ var _ = require('lodash');
 var crowd = new CrowdClient(settings.crowd);
 
 var groups =  [
-    {"name":"RTOP11"},
-    {"name":"RTOP12"}
+    {"name":"Everyone"},
+    {"name":"RTOP11Admin"},
+    {"name":"RTOP12Admin"}
     ];
 
 async.eachSeries(groups, function iterator(item, callback) {

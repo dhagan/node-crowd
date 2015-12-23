@@ -6,6 +6,17 @@ Object.defineProperty(exports, '__esModule', {
 
 var settings =  {
   crowd: {
+    baseUrl: 'http://10.255.233.193:8095/crowd',  // The part that comes before 'rest/usermanagement/1'.
+    application: {
+      name: 'crowd-client',                     // Crowd application name.
+      password: 'inneco2.0'                   // Crowd application password.
+    },
+    nesting: false,                         // Does your backend support nesting? OpenLDAP doesn't.
+    sessionTimeout: 600,                    // Session timeout in seconds. Can never be more than the one configured in Crowd.
+    debug: true                            // Enables verbose logging of requests and responses.
+  }
+/*
+  crowd: {
     baseUrl: 'http://localhost:8095/crowd/',  // The part that comes before 'rest/usermanagement/1'.
     application: {
       name: 'curl-client',                     // Crowd application name.
@@ -15,6 +26,7 @@ var settings =  {
     sessionTimeout: 600,                    // Session timeout in seconds. Can never be more than the one configured in Crowd.
     //debug: true                            // Enables verbose logging of requests and responses.
   }
+  */
 };
 
 
