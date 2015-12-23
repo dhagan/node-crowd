@@ -1,16 +1,11 @@
 var CrowdClient = require('atlassian-crowd-client');
 var User = require('atlassian-crowd-client/lib/models/user');
 var async = require("async");
+var settings = require('./settings');
+var _ = require('lodash');
 
 // Initialize the Crowd client:
-var crowd = new CrowdClient({
-    baseUrl: 'http://localhost:8095/crowd/',
-    application: {
-        name: 'curl-client',
-        password: '1qazxsw2'
-    }
-    //debug: true
-});
+var crowd = new CrowdClient(settings.crowd);
 
 async.waterfall(
     [
