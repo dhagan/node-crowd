@@ -5,6 +5,7 @@ Object.defineProperty(exports, '__esModule', {
 });
 
 var settings =  {
+  /*
   crowd: {
     baseUrl: 'http://10.255.233.193:8095/crowd',  // The part that comes before 'rest/usermanagement/1'.
     application: {
@@ -15,7 +16,7 @@ var settings =  {
     sessionTimeout: 600,                    // Session timeout in seconds. Can never be more than the one configured in Crowd.
     debug: true                            // Enables verbose logging of requests and responses.
   }
-/*
+ */
   crowd: {
     baseUrl: 'http://localhost:8095/crowd/',  // The part that comes before 'rest/usermanagement/1'.
     application: {
@@ -26,9 +27,8 @@ var settings =  {
     sessionTimeout: 600,                    // Session timeout in seconds. Can never be more than the one configured in Crowd.
     //debug: true                            // Enables verbose logging of requests and responses.
   }
-  */
-};
 
+};
 
 exports['default'] = settings;
 module.exports = exports['default'];

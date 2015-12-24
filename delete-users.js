@@ -1,25 +1,32 @@
 var CrowdClient = require('atlassian-crowd-client');
-var User = require('atlassian-crowd-client/lib/models/user');
 var async = require("async");
 var settings = require('./settings');
-var _ = require('lodash');
+var users = require('./data/everyone.json');
 
 // Initialize the Crowd client:
 var crowd = new CrowdClient(settings.crowd);
 
+async.eachSeries(users, function iterator(item, callback) {
+        // delete  user:
+        crowd.user.remove(item.name).then(function (group) {
+            console.log('success');
+            callback(null);
+        }, function (error) {
+            console.log(error);
+            callback(null);
+        });
+    },
+    function done () {
+        // Find all active groups (using Crowd Query Language):
+        crowd.search.user('active=true').then(function (users) {
+            console.log('Found users: ' + users);
+        });
+    });
 
+/*
 async.waterfall(
     [
         function (next) {
-            // Find all active groups (using Crowd Query Language):
-            crowd.search.group('active=true').then(function (groups) {
-                    console.log('Found groups: ' + groups);
-                next(null);
-            }, function (error) {
-                console.log(error);
-                next(null);
-            });
-        }, function (next) {
             // Find all active groups (using Crowd Query Language):
             crowd.search.user('active=true').then(function (users) {
                 console.log('Found users: ' + users);
@@ -44,3 +51,5 @@ async.waterfall(
             });
         }
     ]);
+
+   */
