@@ -1,9 +1,10 @@
 [
-  {"name":"cpicklo","firstname":"John","lastname":"Doe","displayname":"John Doe","email":"johndoe@example.com","active":true,"password":{"value":"secret"}},
-  {"name":"dhagan","firstname":"John","lastname":"Doe","displayname":"John Doe","email":"johndoe@example.com","active":true,"password":{"value":"secret"}},
-  {"name":"jjacobs","firstname":"John","lastname":"Doe","displayname":"John Doe","email":"johndoe@example.com","active":true,"password":{"value":"secret"}},
-  {"name":"csmith","firstname":"John","lastname":"Doe","displayname":"John Doe","email":"johndoe@example.com","active":true,"password":{"value":"secret"}},
-  {"name":"rbays","firstname":"John","lastname":"Doe","displayname":"John Doe","email":"johndoe@example.com","active":true,"password":{"value":"secret"}},
-  {"name":"tmoscatelli","firstname":"John","lastname":"Doe","displayname":"John Doe","email":"johndoe@example.com","active":true,"password":{"value":"secret"}},
-  {"name":"rsova","firstname":"John","lastname":"Doe","displayname":"John Doe","email":"johndoe@example.com","active":true,"password":{"value":"secret"}}
+  {"name":"cpicklo","firstname":"Chris","lastname":"Picklo","displayname":"Chris Picklo","email":"cpicklo@example.com","active":true,"password":{"value":"secret"}},
+  {"name":"dhagan","firstname":"Doug","lastname":"Hagan","displayname":"Doug Hagan","email":"dhagan@example.com","active":true,"password":{"value":"secret"}},
+  {"name":"jjacobs","firstname":"Jeff","lastname":"Jacobs","displayname":"Jeff Jacobs","email":"jjacobs@example.com","active":true,"password":{"value":"secret"}},
+  {"name":"csmith","firstname":"Clint","lastname":"Smith","displayname":"Clint Smith","email":"csmith@example.com","active":true,"password":{"value":"secret"}},
+  {"name":"rbayes","firstname":"Renee","lastname":"Bayes","displayname":"Renee Bayes","email":"rbayes@example.com","active":true,"password":{"value":"secret"}},
+  {"name":"jdudla","firstname":"Jim","lastname":"Dudla","displayname":"Jim Dudla","email":"jdudla@example.com","active":true,"password":{"value":"secret"}},
+  {"name":"tmoscatelli","firstname":"Tony","lastname":"Moscatelli","displayname":" Tony Moscatelli","email":"tmoscatelli@example.com","active":true,"password":{"value":"secret"}},
+  {"name":"rsova","firstname":"Roman","lastname":"Sova","displayname":"Roman Sova","email":"rsova@example.com","active":true,"password":{"value":"secret"}}
 ]
